@@ -96,6 +96,15 @@ body {
   margin: auto;
 }
 
+h1, h2, h3 {
+  color: hsl(233, 26%, 24%);
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 215%;
+}
+
 a, a:visited, a:hover {
   text-decoration: none;
 }
@@ -274,7 +283,7 @@ header {
 /* Hero Section  */
 
 .hero {
-  background-color:hsl(220, 16%, 96%);
+  background-color:hsl(0, 0%, 98%);
   height: 30rem;
   display: flex;
 }
@@ -288,8 +297,8 @@ header {
 
 .bannerIntro h1 {
   color: hsl(233, 26%, 24%);
-  font-size: 3rem;
   font-weight: 300;
+  font-size: 3rem;
   margin: 0 0 1rem 0;
 }
 
@@ -322,6 +331,44 @@ header {
 }
 
 /* Hero Section  */
+
+/* Presentation Section  */
+
+main {
+  height: 30rem;
+}
+
+.presentation {
+  background-color: hsl(220, 16%, 96%);
+}
+
+.presentation > .container {
+  padding: 5% 0;
+}
+
+.presentation-heading {
+  margin-bottom: 5%;
+  width: 60%;
+}
+
+.presentation h2 {
+  margin: 0;
+}
+
+.presentation-boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.presentation .box {
+  width: 25%;
+}
+
+.presentation .box:not(:last-child) {
+  padding-right: 2%;
+}
+
+/* Presentation Section  */
 
 
 /* Media queries  */
@@ -369,6 +416,19 @@ header {
   .bannerImage::after {
     height: 115%;
   }
+
+  .presentation-heading {
+    width: 100%;
+  }
+
+  .presentation .box {
+    width: 50%;
+    padding-bottom: 3%;
+  }
+
+  .presentation .box:nth-child(2),  .presentation .box:nth-child(4) {
+    padding: 0 0 3% 2%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -397,6 +457,32 @@ header {
     background-size: 149%;
     background-position: 38% 91%;
     overflow: hidden;
+  }
+
+  .presentation {
+    text-align: center;
+  }
+
+  .presentation > .container {
+    padding: 20% 0;
+}
+
+  .presentation-heading {
+    width: 100%;
+    margin-bottom: 15%;
+  }
+
+  
+  .presentation .box {
+    width: 100%;
+  }
+
+  .presentation .box:not(:last-child) {
+    padding-right: 0%;
+  }
+
+  .presentation .box:not(:last-child) {
+    padding: 8% 0 8% 0;
   }
 
 }
