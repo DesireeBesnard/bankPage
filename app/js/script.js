@@ -12,6 +12,8 @@ btnHamburger.addEventListener('click', function(){
         header.classList.remove('open');
         overlay.classList.remove('fade-in');
         overlay.classList.add('fade-out');
+        overlay.style.zIndex = "-1";
+        mobileMenu.style.zIndex = "-1";
         mobileMenu.classList.remove('fade-in');
         mobileMenu.classList.add('fade-out');
         
@@ -19,6 +21,8 @@ btnHamburger.addEventListener('click', function(){
         header.classList.add('open');
         overlay.classList.remove('fade-out');
         overlay.classList.add('fade-in');
+        overlay.style.zIndex = "1";
+        mobileMenu.style.zIndex = "1";
         mobileMenu.classList.remove('fade-out');
         mobileMenu.classList.add('fade-in');
         
