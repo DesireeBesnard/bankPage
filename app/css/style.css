@@ -260,7 +260,7 @@ header {
 }
 
 .mobile-menu a {
-  color: black;
+  color: hsl(233, 26%, 24%);
 }
 
 .mobile-menu a:hover {
@@ -287,7 +287,7 @@ header {
 }
 
 .bannerIntro h1 {
-  color: black;
+  color: hsl(233, 26%, 24%);
   font-size: 3rem;
   font-weight: 300;
   margin: 0 0 1rem 0;
@@ -298,7 +298,7 @@ header {
 }
 
 .bannerIntro div {
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 
 .bannerImage {
