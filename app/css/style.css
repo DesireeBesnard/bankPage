@@ -102,7 +102,7 @@ h1, h2, h3 {
 }
 
 h2 {
-  font-size: 215%;
+  font-size: 180%;
 }
 
 a, a:visited, a:hover {
@@ -296,8 +296,6 @@ header {
 }
 
 .bannerIntro h1 {
-  color: hsl(233, 26%, 24%);
-  font-weight: 300;
   font-size: 3rem;
   margin: 0 0 1rem 0;
 }
@@ -334,15 +332,11 @@ header {
 
 /* Presentation Section  */
 
-main {
-  height: 30rem;
-}
-
 .presentation {
   background-color: hsl(220, 16%, 96%);
 }
 
-.presentation > .container {
+.presentation > .container, .articles > .container {
   padding: 5% 0;
 }
 
@@ -351,24 +345,63 @@ main {
   width: 60%;
 }
 
-.presentation h2 {
+.presentation h2, .articles h2 {
   margin: 0;
 }
 
-.presentation-boxes {
+.presentation-boxes, .articles-cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.presentation .box {
-  width: 25%;
-}
-
-.presentation .box:not(:last-child) {
-  padding-right: 2%;
+.presentation .box, .articles-cards .card {
+  width: 23%;
 }
 
 /* Presentation Section  */
+
+/* Articles Section  */
+
+.articles {
+  background-color:hsl(0, 0%, 98%);
+}
+
+.articles-cards {
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: white;
+}
+
+.illustration img {
+  width: 100%;
+  height: 164px;
+  border-radius: 5% 5% 0 0;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-content p {
+  margin: 0;
+}
+
+.card-content .author {
+  font-size: 60%;
+}
+
+.card-content h3 {
+  font-size: 100%;
+}
+
+.card-content .article-abstract {
+  font-size: 75%;
+}
+
+/* Articles Section  */
 
 
 /* Media queries  */
@@ -421,13 +454,9 @@ main {
     width: 100%;
   }
 
-  .presentation .box {
-    width: 50%;
-    padding-bottom: 3%;
-  }
-
-  .presentation .box:nth-child(2),  .presentation .box:nth-child(4) {
-    padding: 0 0 3% 2%;
+  .presentation .box, .articles-cards .card {
+    width: 45%;
+    margin-bottom: 3%;
   }
 }
 
@@ -437,7 +466,7 @@ main {
   }
   
   .hero {
-    height: 50rem;
+    height: 40rem;
     flex-direction: column-reverse;
   }
 
@@ -459,12 +488,12 @@ main {
     overflow: hidden;
   }
 
-  .presentation {
+  .presentation, .articles h2 {
     text-align: center;
   }
 
-  .presentation > .container {
-    padding: 20% 0;
+  .presentation > .container, .articles > .container  {
+    padding: 12% 0;
 }
 
   .presentation-heading {
@@ -473,16 +502,13 @@ main {
   }
 
   
-  .presentation .box {
+  .presentation .box, .articles-cards .card  {
     width: 100%;
+    margin-bottom: 5%;
   }
 
-  .presentation .box:not(:last-child) {
-    padding-right: 0%;
-  }
-
-  .presentation .box:not(:last-child) {
-    padding: 8% 0 8% 0;
+  .illustration img {
+    height: auto;
   }
 
 }
@@ -503,7 +529,7 @@ main {
 @media (max-width: 425px) {
   .bannerImage::after {
     width: 115%;
-    height: 100%;
+    height: 140%;
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 67%;
