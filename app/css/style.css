@@ -587,12 +587,25 @@ footer a:hover {
     width: 50%;
   }
 
+  .socials svg {
+    width: 13%;
+  }
+
+  .footer-links {
+    width: 43%;
+  }
+
   .attribution {
     padding-bottom: 5%;
   }
 }
 
 @media (max-width: 600px) {
+
+  .mobile-menu li {
+    padding: 7% 0;
+  }
+
   .container {
     width: 90%;
   }
@@ -674,7 +687,7 @@ footer a:hover {
   }
 
   .socials svg {
-    width: 6%;
+    width: 7%;
   }
 
   .footer-links {
