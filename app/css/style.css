@@ -94,6 +94,7 @@ body {
 .container {
   width: 80%;
   margin: auto;
+  max-width: 80rem;
 }
 
 h1, h2, h3 {
